@@ -1,27 +1,6 @@
 "Resource/HudLayout.res"
 {
 	//crosshairs
-	
-	Spookmaster
-	{
-		"controlName"	"CExLabel"
-		"fieldName"	 	"Spookmaster"
-		"font"			"CerbeticaBold44"
-		"visible"		"0"
-		"enabled"		"0"
-		"zpos"			"2"
-
-		"xpos"			"c-100"
-		"ypos"			"c-102"
-		"wide"			"201"
-		"tall"			"200"
-
-		"labelText"		"0 0"
-		"textAlignment"	"center"	
-		
-		"fgcolor"		"255 0 0 0"
-	}
-	
 	xHairCircle
 	{
 		"controlName"	"CExLabel"
@@ -196,8 +175,8 @@
 	{
 		"controlName"	"CExLabel"
 		"fieldName"	 	"WingsPlus"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"zpos"			"2"
 
 		"xpos"			"c-100"
@@ -205,12 +184,12 @@
 		"wide"			"200"
 		"tall"			"200"
 
-		//"font"			"CrosshairsOutline34"
-		"font"			"Crosshairs34"
+		"font"			"CrosshairsOutline34"
+		//"font"			"Crosshairs34"
 		"labelText"		"c"
 		"textAlignment"	"center"	
 		
-		"fgcolor"		"255 255 255 255"
+		"fgcolor"		"0 255 0 200"
 	}
 	
 	Wings
@@ -252,7 +231,7 @@
 		"labelText"		"f"
 		"textAlignment"	"center"	
 		
-		"fgcolor"		"0 0 0 0"
+		"fgcolor"		"255 255 255 255"
 	}
 	
 	WingsSmall
@@ -832,8 +811,8 @@
 		"fieldName" "HudWeaponAmmo"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"c70"
-		"ypos"	"c66"
+		"xpos"	"c20"
+		"ypos"	"c16"
 		"wide"	"300" //was made 4 units taller in MvM update
 		"tall"	"300"
 	}
@@ -882,8 +861,8 @@
 		"fieldName"		"HudMedicCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-150"	
-		"ypos"			"c20"	
+		"xpos"			"c-62"	
+		"ypos"			"c24"	
 		"wide"			"500"
 		"tall"			"500"
 	}
@@ -906,8 +885,8 @@
 		"fieldName"		"HudBowCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-100"	
-		"ypos"			"c111"	
+		"xpos"			"c-75"	
+		"ypos"			"c46"	
 		"zpos"			"1"			// draw in front of ammo
 		"wide"			"500"
 		"tall"			"500"
@@ -991,7 +970,7 @@
 	CHudAccountPanel
 	{
 		"fieldName"				"CHudAccountPanel"
-		"xpos"					"c112"
+		"xpos"					"c68"
 		"ypos"					"c6"
 		"wide"					"116"
 		"tall"  				"180"
@@ -1003,10 +982,10 @@
 	CHealthAccountPanel
 	{
 		"fieldName"				"CHealthAccountPanel"
-		"xpos"					"c-288"
-		"ypos"					"c45"
-		"wide"					"250"
-		"tall"  				"120"
+		"xpos"					"c-100"		
+		"ypos"					"c5"
+		"wide"					"f0"
+		"tall"  				"480"
 		"visible" 				"1"
 		"enabled" 				"1"
 		"PaintBackgroundType"	"2"
@@ -1044,7 +1023,7 @@
 		"visible" 	"0"
 		"enabled" 	"1"
 		"xpos"		"c-100"
-		"ypos"		"c25"
+		"ypos"		"c105"
 		"zpos"		"1"
 		"wide"	 	"600"
 		"tall"	 	"45"
@@ -1086,9 +1065,7 @@
 		"visible"	"1"
 		"enabled"	"1"
 		"xpos"		"0"	[$WIN32]
-		"ypos"		"0"	[$WIN32]
-		"xpos"		"32"	[$X360]
-		"ypos"		"16"	[$X360]		
+		"ypos"		"c-20"	[$WIN32]
 		"wide"		"640"
 		"tall"		"480"
 		
@@ -1310,7 +1287,7 @@
 		"fieldName" "ScorePanel"
 		"visible" "1"
 		"enabled" "1"
-		"wide"	 "640"
+		"wide"	 "f0"
 		"tall"	 "480"
 	}
 
@@ -1364,8 +1341,8 @@
 		"wide"	 "640"
 		"tall"	 "480"
 		"zpos" 	"10"
-		"xpos"			"c-176"
-		"ypos"			"c90"
+		"xpos"			"c-115"
+		"ypos"			"c37"
 		
 		"TextFont"				"Default"
 		"ItemFont"				"Default"
@@ -1377,10 +1354,10 @@
 		"fieldName" "HudCloseCaption"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"c188"
-		"ypos"		"302"	[$WIN32]
-		"wide"		"150"
-		"tall"		"60"	[$WIN32]
+		"xpos"		"c115"
+		"ypos"		"273"	[$WIN32]
+		"wide"		"100"
+		"tall"		"40"
 
 		"BgAlpha"	"0"
 
@@ -1776,7 +1753,7 @@
 		"PaintBackgroundType"	"0"
 	}
 	
-		"HudEurekaEffectTeleportMenu"
+			"HudEurekaEffectTeleportMenu"
 	{
 		"fieldName" 	"HudEurekaEffectTeleportMenu"
 		"visible" 		"1"
@@ -1890,12 +1867,11 @@
 		"fieldName"				"HudTournament"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"c-125"
-		"ypos"					"5"
-		"ypos_lodef"				"75"
+		"xpos"					"0"
+		"ypos"					"0"
 		"zpos"					"2"
-		"wide"					"250"
-		"tall"					"80"
+		"wide"					"f0"
+		"tall"					"480"
 	}
 
 	HudTournamentSetup
@@ -1962,7 +1938,6 @@
 		"enabled"				"1"
 		"xpos"					"0"
 		"ypos"					"r320"
-		"zpos"					"11"
 		"wide"					"f0"
 		"tall"					"320"
 	}
@@ -2068,7 +2043,7 @@
 		"fieldName"		"MainMenuAdditions"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"500"
+		"xpos"			"c0"
 		"ypos"			"310"
 		"zpos"			"0"
 		"wide"			"300"
@@ -2145,7 +2120,21 @@
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
 	}
-	"HudMenuTauntSelection"
+		"HudMenuTauntSelection"
+	{
+		"fieldName" 	"HudMenuTauntSelection"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"c-235"
+		"ypos"			"c-52"
+		"ypos_hidef"	"c-42"
+		"ypos_lodef"	"c-42"
+		"wide"			"470"
+		"tall"			"200"
+		"PaintBackgroundType"	"0"
+	}
+	
+		"HudMenuTauntSelection"
 	{
 		"fieldName" 	"HudMenuTauntSelection"
 		"visible" 		"1"
@@ -2156,7 +2145,8 @@
 		"tall"			"200"
 		"PaintBackgroundType"	"0"
 	}
-	HudMiniGame
+	
+		HudMiniGame
 	{
 		"fieldName" 	"HudMiniGame"
 		"visible" 		"1"
@@ -2167,7 +2157,7 @@
 		"tall" 			"480"
 	}
 	
-	"QuestNotificationPanel"
+		"QuestNotificationPanel"
 	{
 		"fieldName"	"QuestNotificationPanel"
 		"visible" "1"
@@ -2222,5 +2212,20 @@
 		"zpos"					"2"
 		"wide"					"f0"
 		"tall"					"f0"
+	}
+	"TransparentViewmodelMask"
+	{
+		//alpha doesn't work for this, you need to change the texture's alpha
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TransparentViewmodelMask"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-100"
+		"wide"			"f0"
+		"tall"			"480"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/REFRACTnormal_transparent"
+		"scaleImage"	"1"
 	}
 }
